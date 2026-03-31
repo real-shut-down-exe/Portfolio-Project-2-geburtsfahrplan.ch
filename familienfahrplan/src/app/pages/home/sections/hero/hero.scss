@@ -1,0 +1,107 @@
+@use "../../../../../styles/breakpoints" as *;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2.5rem;
+
+    &__title {
+        font-size: 3rem;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__description {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: hsl(220 10% 45%);
+        text-wrap: balance;
+        max-width: 37rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__cta {
+        border: none;
+        width: fit-content;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        background-color: hsl(220 65% 30%);
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        color: aliceblue;
+
+        &:hover {
+            filter: brightness(1.05);
+        }
+
+        &:active {
+            transform: translateY(1px);
+        }
+
+        &:focus-visible {
+            outline: 2px solid rgba(31, 58, 138, 0.35);
+            outline-offset: 3px;
+        }
+
+        &:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+    }
+
+    &__meta {
+        color: hsl(220 10% 45%);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin: 0;
+        margin-bottom: 2rem;
+
+    }
+
+    &__trust {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+
+        &-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .40rem;
+            font-size: 0.90rem;
+            line-height: 1.125rem;
+            color: hsl(220 10% 45%);
+
+
+            &-icon {}
+
+            &-text {
+                // text part
+            }
+        }
+    }
+
+    @include between(xs, md) {
+        padding: 3rem 1rem;
+
+        &__title {
+            font-size: 1.875rem;
+        }
+
+        &__description {
+            font-size: 1.2rem;
+        }
+    }
+
+}

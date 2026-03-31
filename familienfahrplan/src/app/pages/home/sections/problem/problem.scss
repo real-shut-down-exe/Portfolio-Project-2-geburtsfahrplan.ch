@@ -1,0 +1,44 @@
+.problem {
+    padding: 5rem 2rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__h2 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        margin-bottom: 2rem;
+    }
+
+    &__ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 42rem;
+        gap: 1.5rem;
+    }
+
+    &__li {
+        display: flex;
+        align-items: flex-start;
+        gap: .75rem;
+        box-sizing: border-box;
+    }
+
+    &__svg {
+        fill: transparent !important;
+        color: #d31212;
+    }
+
+    &__text {
+        font-size: 1.15rem;
+        line-height: 1.5;
+        word-spacing: 1px;
+        color: rgb(41, 41, 41);
+    }
+}

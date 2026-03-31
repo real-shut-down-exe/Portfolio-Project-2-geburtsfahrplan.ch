@@ -1,0 +1,17 @@
+.what-you-get {
+    padding: 5rem 0;
+    background-color: crimson;
+    &__container {
+        background-color: rgb(119, 93, 98);
+    }
+    
+    &__h2{
+        background-color: rgb(101, 119, 93);
+    }
+    
+    &__items{
+        display: grid;
+        
+        background-color: rgb(93, 100, 119);
+    }
+}

@@ -1,0 +1,18 @@
+$breakpoints: (
+  xs: 0px,      // base
+  sm: 360px,    // phones
+  md: 640px,    // tablets
+  lg: 768px,    // small laptops
+  xl: 1024px,   // desktops
+  xxl: 1280px   // large
+);
+
+@function bp($key) {
+  @return map-get($breakpoints, $key);
+}
+
+@mixin between($from, $to) {
+  @media (min-width: bp($from)) and (max-width: (bp($to) - 1px)) {
+    @content;
+  }
+}
